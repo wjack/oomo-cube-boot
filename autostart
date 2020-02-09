@@ -1,5 +1,5 @@
-@lxpanel --profile LDXE-pi
+@lxpanel --profile LXDE-pi
 @pcmanfm --desktop --profile LXDE-pi
 @xscreensaver -no-splash
 point-rpi
-/usr/bin/chromium-browser --kiosk --ignore-certificate-errors --disable-restore-session-state https://oomo-server.herokuapp.com/face/firstprototype
+/usr/bin/chromium-browser --kiosk --incognito --disable-restore-session-state https://oomo-server.herokuapp.com/face/firstprototype
