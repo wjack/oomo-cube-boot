@@ -1,7 +1,7 @@
 #!/bin/sh  -e
 #
 # rc.local
-/usr/bin/chromium-browser --kiosk --incognito https://oomo-server.herokuapp.com/face/firstprototype &
+/usr/bin/chromium-browser --kiosk --incognito --no-sandbox https://oomo-server.herokuapp.com/face/firstprototype &
 /usr/bin/xset s 0
 /usr/bin/xset -dpms
 
