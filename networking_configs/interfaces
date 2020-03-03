@@ -1,0 +1,22 @@
+# interfaces(5) file used by ifup(8) and ifdown(8)
+
+# Please note that this file is written to be used by dhpcd
+# For static IP, consult /etc/dhcpd.conf and 'man dhcpd.conf'
+
+# include files from /etc/network/interfaces.d:
+# source-directory /etc/network/interfaces/d
+
+# following instructions from www.raspberrypi.org/forums/viewtopic.php?t=116023
+
+auto lo
+
+iface lo inet loopback
+iface eth0 inet dhcp
+
+allow-hotplug wlan0
+auto wlan0
+
+iface wlan0 inet static
+wpa-conf /etc/wpa_supplicant/wpa_supplicant.conf
+
+
